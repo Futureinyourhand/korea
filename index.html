@@ -1,6 +1,4 @@
 <!DOCTYPE html>
-<html>
-<head><!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -17,11 +15,17 @@
         }
 
         @keyframes glow {
-            0% { text-shadow: 0 0 10px #ff0000; }
-            25% { text-shadow: 0 0 10px #0000ff; }
-            50% { text-shadow: 0 0 10px #00ff00; }
-            75% { text-shadow: 0 0 10px #ffff00; }
-            100% { text-shadow: 0 0 10px #ff0000; }
+            0% { text-shadow: 0 0 20px #ff0000; }
+            25% { text-shadow: 0 0 20px #0000ff; }
+            50% { text-shadow: 0 0 20px #00ff00; }
+            75% { text-shadow: 0 0 20px #ffff00; }
+            100% { text-shadow: 0 0 20px #ff0000; }
+        }
+
+        @keyframes moveText {
+            0% { transform: translateX(0) rotateX(10deg); }
+            50% { transform: translateX(20px) rotateX(10deg); }
+            100% { transform: translateX(0) rotateX(10deg); }
         }
 
         .container {
@@ -29,7 +33,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            background: #111;
+            background: linear-gradient(45deg, #1a1a2e, #16213e, #0f3460);
             color: white;
             text-align: center;
             border: 10px solid;
@@ -43,24 +47,13 @@
             font-weight: bold;
             text-transform: uppercase;
             perspective: 500px;
-            transform: rotateX(10deg);
-            animation: glow 2s infinite alternate;
+            animation: glow 2s infinite alternate, moveText 3s infinite ease-in-out;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Website is Under Development see you soon vaama educations</h1>
+        <h1>Website is Under Development</h1>
     </div>
 </body>
 </html>
-<title>Page Title</title>
-</head>
-<body>
-
-<h1>My First Heading</h1>
-<p>My first paragraph.</p>
-
-</body>
-</html>
-
