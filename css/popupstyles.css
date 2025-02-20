@@ -1,0 +1,80 @@
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1001;
+    left: 0;
+    top: 0;
+    width: 100%;   
+    height: 100%; 
+    overflow: initial;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding:0 8px;        
+}
+
+.popup-content {
+    background-color: #fff;
+    margin: 5% auto;
+    padding: 40px;    
+    width: 100%;
+    max-width: 760px;
+    position: relative;
+    border-radius: 40px;
+    transition: 1s all;  
+    overflow-y: auto;  
+}
+
+body.popup-active {
+    pointer-events: none;
+    overflow: initial;
+}
+
+body.popup-active .popup-content {
+    pointer-events: auto;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.autocomplete-items {
+    border: 1px solid #d4d4d4;
+    border-bottom: none;
+    border-top: none;
+    z-index: 99;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;    
+}
+
+.autocomplete-items div {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #fff;
+    border-bottom: 1px solid #d4d4d4;    
+}
+
+.autocomplete-items div:hover {
+    background-color: #e9e9e9;
+}
+
+
+/* For styling and mobile support */
+.dtl-cont-wrap p, input {
+    border-radius: 5px;
+    font-size: 13px;
+}
+
+#summaryMobile {
+    max-width: 150px;
+}

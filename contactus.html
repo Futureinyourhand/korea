@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaama Education - About Us</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --bg-color: #f0f5ff;       /* Light blue background */
+            --accent-blue: #2563eb;     /* Primary blue */
+            --hover-blue: #1e40af;      /* Darker blue for hover */
+            --text-dark: #1e293b;       /* Dark text */
+        }
+
+        .team-card {
+            background: white;
+            border-radius: 20px;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
+
+        .team-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+        }
+
+        .team-image {
+            height: 300px;
+            transition: transform 0.3s ease;
+        }
+    </style>
+</head>
+<body class="bg-[var(--bg-color)]">
+    <!-- Hero Section -->
+    <section class="py-20 px-4">
+        <div class="max-w-6xl mx-auto text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 text-[var(--text-dark)]">
+                Your Gateway to<br>
+                <span class="text-[var(--accent-blue)]">Empowering Dreams, Transforming Futures
+                </span>
+            </h1>
+            <p class="text-xl md:text-2xl mb-8 text-gray-600 max-w-2xl mx-auto">
+                
+                
+                Specialized in Korean language training, test preparation, and overseas career guidance
+            </p>
+        </div>
+    </section>
+
+    <!-- Services Showcase -->
+    <section class="py-16 px-4 bg-white">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8">
+            <div class="p-8 rounded-2xl bg-[var(--bg-color)] hover:bg-white transition-all duration-300">
+                <div class="text-[var(--accent-blue)] text-4xl mb-4">
+                    <i class="fas fa-globe-asia"></i>
+                </div>
+                <h3 class="text-2xl font-bold mb-4">Korean Language</h3>
+                <p class="text-gray-600">Comprehensive EPS-TOPIK training with native speakers</p>
+            </div>
+            
+            <div class="p-8 rounded-2xl bg-[var(--bg-color)] hover:bg-white transition-all duration-300">
+                <div class="text-[var(--accent-blue)] text-4xl mb-4">
+                    <i class="fas fa-passport"></i>
+                </div>
+                <h3 class="text-2xl font-bold mb-4">Visa Assistance</h3>
+                <p class="text-gray-600">Complete documentation and application support</p>
+            </div>
+            
+            <div class="p-8 rounded-2xl bg-[var(--bg-color)] hover:bg-white transition-all duration-300">
+                <div class="text-[var(--accent-blue)] text-4xl mb-4">
+                    <i class="fas fa-chalkboard-teacher"></i>
+                </div>
+                <h3 class="text-2xl font-bold mb-4">Test Prep</h3>
+                <p class="text-gray-600">PTE, IELTS, and career-specific training</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="py-20 px-4">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-[var(--text-dark)]">
+                Meet Our Experts
+            </h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Madan Marasini -->
+                <div class="team-card">
+                    <div class="overflow-hidden rounded-t-2xl">
+                        <img src="img/personal_image/ceo.jpeg" 
+                             class="team-image w-full object-cover">
+                    </div>
+                    <div class="p-6 text-center">
+                        <h3 class="text-2xl font-bold mb-2">मदन मरासिनि</h3>
+                        <p class="text-[var(--accent-blue)] font-semibold mb-4">Founder & CEO</p>
+                        <div class="flex justify-center space-x-4">
+                            <a href="https://www.facebook.com/profile.php?id=61564167162276" class="text-gray-500 hover:text-[var(--accent-blue)]">
+                                <i class="fab fa-facebook text-xl"></i>
+                            </a>
+                            <a href="https://api.whatsapp.com/send/?phone=+9779857051868&text=Hi&type=phone_number" class="text-gray-500 hover:text-[var(--accent-blue)]">
+                                <i class="fab fa-whatsapp text-xl"></i>
+                            </a>
+                            <a href="#" class="text-gray-500 hover:text-[var(--accent-blue)]">
+                                <i class="fas fa-envelope text-xl"></i>
+                            </a>
+                            <a href="#" id="ccallButton" class="button open-popup" style="cursor:pointer;" onclick="handleButtonClick(event)" >
+                                <i class="fas fa-phone-alt"></i> <!-- Phone icon -->
+                                
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <div class="overflow-hidden rounded-t-2xl">
+                        <img src="img/personal_image/sumandai.jpg" 
+                             class="team-image w-full object-cover">
+                    </div>
+                    <div class="p-6 text-center">
+                        <h3 class="text-2xl font-bold mb-2">Bibash poudel</h3>
+                        <p class="text-[var(--accent-blue)] font-semibold mb-4">Tuition Teacher</p>
+                        <div class="flex justify-center space-x-4">
+                            <a href="https://www.facebook.com/bibaspoudell" class="text-gray-500 hover:text-[var(--accent-blue)]">
+                                <i class="fab fa-facebook text-xl"></i>
+                            </a>
+                            <a href="https://api.whatsapp.com/send/?phone=+9779865451404&text=Hi&type=phone_number" class="text-gray-500 hover:text-[var(--accent-blue)]">
+                                <i class="fab fa-whatsapp text-xl"></i>
+                            </a>
+                            <a href="#" class="text-gray-500 hover:text-[var(--accent-blue)]">
+                                <i class="fas fa-envelope text-xl"></i>
+                            </a>
+                            <a href="#" class="text-gray-500 hover:text-[var(--accent-blue)]">
+                                <i class="fas fa-phone-alt"></i> <!-- Phone icon -->
+                                
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <div class="overflow-hidden rounded-t-2xl">
+                        <img src="img/personal_image/bishwasdai.jpeg" 
+                             class="team-image w-full object-cover">
+                    </div>
+                    <div class="p-6 text-center">
+                        <h3 class="text-2xl font-bold mb-2">Bishwas pandey</h3>
+                        <p class="text-[var(--accent-blue)] font-semibold mb-4">Tuition Teacher</p>
+                        <div class="flex justify-center space-x-4">
+                            <a href="https://www.facebook.com/bishwas.pandey.3762" class="text-gray-500 hover:text-[var(--accent-blue)]">
+                                <i class="fab fa-facebook text-xl"></i>
+                            </a>
+                            <a href="https://api.whatsapp.com/send/?phone=+9779866860825&text=Hi&type=phone_number" class="text-gray-500 hover:text-[var(--accent-blue)]">
+                                <i class="fab fa-whatsapp text-xl"></i>
+                            </a>
+                            <a href="#" class="text-gray-500 hover:text-[var(--accent-blue)]">
+                                <i class="fas fa-envelope text-xl"></i>
+                                
+                            </a>
+                            <a href="#" class="text-gray-500 hover:text-[var(--accent-blue)]">
+                                <i class="fas fa-phone-alt"></i> <!-- Phone icon -->
+                                
+                            </a>
+
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Other team members with same structure -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact CTA -->
+    <section class="py-20 px-4 bg-white">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-8 text-[var(--text-dark)]">
+                Start Your International Journey
+            </h2>
+            <a href="index.html" class="inline-block bg-[var(--accent-blue)] text-white px-8 py-4 rounded-full 
+            text-lg font-semibold hover:bg-[var(--hover-blue)] transition-all shadow-lg hover:shadow-xl">
+                
+        GO to home page
+            </a>
+        </div>
+    </section>
+</body>
+</html>

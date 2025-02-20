@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming Soon</title>
+    <style>
+        /* Basic reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Full page background */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Centered container */
+        .container {
+            text-align: center;
+        }
+
+        /* Coming Soon text styling */
+        .coming-soon {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        /* Marquee effect */
+        marquee {
+            font-size: 1.2rem;
+            color: #555;
+        }
+
+        /* RGB button */
+        .rgb-button {
+            padding: 15px 30px;
+            background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(0,255,0,1) 50%, rgba(0,0,255,1) 100%);
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            color: white;
+            cursor: pointer;
+            transition: background 0.5s ease;
+        }
+
+        /* RGB button hover effect */
+        .rgb-button:hover {
+            background: linear-gradient(90deg, rgba(255,0,255,1) 0%, rgba(0,255,255,1) 50%, rgba(255,255,0,1) 100%);
+        }
+
+        /* Hidden message and link */
+        .follow-message {
+            display: none;
+            margin-top: 20px;
+            font-size: 1.2rem;
+            color: #333;
+        }
+
+        .follow-message a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .follow-message a:hover {
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Coming Soon text -->
+        <div class="coming-soon">
+            Coming Soon
+        </div>
+
+        <!-- Marquee text -->
+        <marquee>Stay tuned for exciting updates!</marquee>
+
+        <!-- RGB button -->
+        <button class="rgb-button" onclick="showFollowMessage()">Notify Me</button>
+
+        <!-- Follow us message -->
+        <div class="follow-message" id="followMessage">
+            <p>Follow us on <a href="YOUR_CONTACT_US_LINK_HERE" target="_blank">Contact Us</a></p>
+        </div>
+    </div>
+
+    <script>
+        // Function to show the message and link
+        function showFollowMessage() {
+            document.getElementById("followMessage").style.display = "block";
+        }
+    </script>
+</body>
+</html>
